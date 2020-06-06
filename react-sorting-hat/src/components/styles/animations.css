@@ -1,0 +1,27 @@
+.float {
+    animation-name: float;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.floatReverse {
+    animation-name: floatReverse;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes float {
+    50% {transform: translateY(-5px);}
+    75% {transform: translateY(5px);}
+    100% {transform: translate(0px);}
+}
+
+@keyframes floatReverse {
+    50% {transform: translateY(5px);}
+    75% {transform: translateY(-5px);}
+    100% {transform: translateY(0px);}
+}
