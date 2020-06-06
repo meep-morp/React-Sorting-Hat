@@ -26,15 +26,15 @@ const App = () => {
 	//RENDER
 	return (
 		<div className="App">
-			<Nav />
-			<Router>
+			 <Nav />
+			 <Router>
 				<Route path="/" exact>
 					<div className="home">
 						<Logo />
 						<Buttons />
 					</div>
 				</Route>
-				<Route path="/login">
+				 <Route path="/login">
 					<Login
 						onChangeHandler={onChangeHandler}
 						user={login}
@@ -49,7 +49,7 @@ const App = () => {
 					/>
 				</Route>
 			</Router>
-			<Footer />
+			<Footer /> 
 		</div>
 	);
 };
