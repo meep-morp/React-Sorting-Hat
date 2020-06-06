@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Tenali+Ramakrishna&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html {
+  background-color: rgb(30, 27, 32);
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Metal Mania', cursive;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  color: white;
+}
+
+.button {
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  margin: 10px;
+  min-width: 100px;
+  overflow: hidden;
+  text-emphasis: center;
+
+  background: rgb(162,85,179);
+  background: linear-gradient(103deg, 
+  rgba(162,85,179,1) 48%, 
+  rgba(42,32,139,1) 100%);
+}
+
+.button:hover {
+  transition: ease 0.3s;
+  min-width: 150px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+form input {
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  font-size: 1.6rem;
+  margin: 5px;
+  padding: 5px;
+  width: 25%;
+  height: 20px;
+  outline: none;
+}
+
+form input:focus {
+  border: rgb(177, 144, 238) 2px solid;
+  transition: ease 0.3s;
+}
+
+form input::placeholder {
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.527);
+}
+
+/*  NAV BAR   */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: aliceblue;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: rgb(35, 21, 58);
+}
+nav img {
+  height: 50px;
+  width: auto;
+}
+
+.logo {
+  font-size: 3rem;
+  margin: 5%;
+  color: white;
+}
+
+/*  HOMEPAGE   */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup {
+  font-size: 4rem;
+  height: 50px;
+  width: 400px;
+
+  background: rgb(222,130,18);
+  background: linear-gradient(257deg, 
+    rgba(222,130,18,1) 24%, 
+    rgba(150,51,15,1) 93%);
+}
+
+.signup:hover {
+  box-shadow: 0 3px 12px rgb(243, 131, 57);
+}
+
+.login {
+  font-size: 4rem;
+  height: 50px;
+  width: 400px;
+}
+
+.login:hover {
+  box-shadow: 0 3px 12px rgb(124, 74, 218);
+  transition: 0.3s ease;
+}
+
+/*  SIGNUP   */
+.nameSignup {
+  display: flex;
+  width: 26.5%;
+}
+
+.nameSignup input {
+  width: 100%;
+}
+
+
+/*  FOOTER   */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  color: rgb(35, 21, 58);
+  background-color: white;
+  bottom: 0;
+  height: 10vh;
+}
